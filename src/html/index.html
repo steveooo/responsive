@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en" class="bg">
+    <head>
+    	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>AKQA Music</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+        <link rel="stylesheet" href="./app.css">
+        <style>
+	        @font-face {
+			    font-family: sanfranciscodisplay-regular;
+			    src: url(./assets/fonts/sanfranciscodisplay-regular-webfont.woff);
+	        }
+        </style>
+    </head>
+    <body class="bg">
+    	<header class="header">
+    		<nav onclick="o.handleNav(event,this);" onkeyup="o.handleNav(event,this);">
+    			<ul class="mobileNav" role="navigation">
+    				<li class="navItem fl text-left"><img role="button" tabindex="0" data-action="hamburger" class="icon iconButton hamburger" src="./assets/img/hamburger.png" alt="menu open"><img role="button" tabindex="0" data-action="close" class="icon iconButton close" src="./assets/img/close.png" alt="menu close"></li>
+    				<li class="navItem fr text-right"><img role="button" tabindex="0" data-action="search" class="icon iconButton search" src="./assets/img/search.png" alt="search"></li>
+    			</ul>
+    			<ul class="mainNav" role="menu">
+    				<li class="navItem" role="menuitem"><a href="#" tabindex="0">my music</a></li>
+    				<li class="navItem" role="menuitem"><a href="#" tabindex="0">playlist</a></li>
+    				<li class="navItem" role="menuitem"><a href="#" tabindex="0">new</a></li>
+    				<li class="navItem" role="menuitem"><a href="#" tabindex="0">explore</a></li>
+    				<li class="navItem searchMain" role="menuitem"><img tabindex="0" data-action="search" class="icon iconButton search" src="./assets/img/search.png" alt="search"></li>
+    			</ul>
+    		</nav>
+    	</header>
+    	<section class="pageSection">
+    		<div class="columns">
+    			<div class="col col-2-3 divider-right">
+	    			<div class="col col-1-2">
+	    				<div class="tileWrapper">
+	    					<img tabindex="0" class="tile" src="./assets/img/tile4.1.png" alt="album">
+	    					<div class="caption">
+	    						<h2 class="title">New and Noteworthy</h2>
+	    						<h3 class="info">Kicking off 2016 with these new hits</h3>
+	    					</div>
+	    				</div>
+	    				<div class="tileWrapper">
+	    					<img tabindex="0" class="tile" src="./assets/img/tile2.1.png" alt="album">
+	    					<div class="caption blue">
+	    						<h2 class="title">Best of 2015</h2>
+	    						<h3 class="info">Rewind last year’s best hits</h3>
+	    					</div>
+	    				</div>
+	    			</div>
+	    			<div class="col col-1-2">
+	    				<div class="tileWrapper">
+	    					<img tabindex="0" class="tile" src="./assets/img/tile3.1.png" alt="album">
+	    					<div class="caption orange">
+	    						<h2 class="title">Pre-Order New Music</h2>
+	    						<h3 class="info">Available later this season</h3>
+	    					</div>
+	    				</div>
+	    				<div class="tileWrapper">
+	    					<img tabindex="0" class="tile" src="./assets/img/tile1.1.png" alt="album">
+	    					<div class="caption">
+	    						<h2 class="title">New Artist Spotlight</h2>
+	    						<h3 class="info">Hear some of the newest hits in 2016</h3>
+	    					</div>
+	    				</div>
+	    			</div>
+	    			<div class="cb"></div>
+    			</div>
+    			<div class="col col-1-3 divider-left">
+    				<h3 class="columnTitleLeft">Top Songs</h3>
+    				<ul class="songs" role="tree">
+    					<li class="song" role="treeitem" tabindex="0">
+    						<div class="imgBorder">
+    							<img src="./assets/img/song1.png" alt="song" class="songThumb">
+    						</div>
+    						<span class="songTitle">Panda</span>
+    						<span class="songArtist">Desiigner</span>
+	    					<div class="cb"></div>
+    					</li>
+    					<li class="song" role="treeitem" tabindex="0">
+    						<div class="imgBorder">
+    							<img src="./assets/img/song3.png" alt="song" class="songThumb">
+    						</div>
+    						<span class="songTitle">Needed Me</span>
+    						<span class="songArtist">Rihanna</span>
+	    					<div class="cb"></div>
+    					</li>
+    					<li class="song" role="treeitem" tabindex="0">
+    						<div class="imgBorder">
+    							<img src="./assets/img/song5.png" alt="song" class="songThumb">
+    						</div>
+    						<span class="songTitle">Don't Let Me Down</span>
+    						<span class="songArtist">The Chainsmokers, Daya</span>
+	    					<div class="cb"></div>
+    					</li>
+    					<li class="song" role="treeitem" tabindex="0">
+    						<div class="imgBorder">
+    							<img src="./assets/img/song2.png" alt="song" class="songThumb">
+    						</div>
+    						<span class="songTitle">7 Years</span>
+    						<span class="songArtist">Lukas Graham</span>
+	    					<div class="cb"></div>
+    					</li>
+    					<li class="song" role="treeitem" tabindex="0">
+    						<div class="imgBorder">
+    							<img src="./assets/img/song3.png" alt="song" class="songThumb">
+    						</div>
+    						<span class="songTitle">Work</span>
+    						<span class="songArtist">Rihanna, Drake</span>
+	    					<div class="cb"></div>
+    					</li>
+    					<li class="song" role="treeitem" tabindex="0">
+    						<div class="imgBorder">
+    							<img src="./assets/img/song4.png" alt="song" class="songThumb">
+    						</div>
+    						<span class="songTitle">Mike Posner</span>
+    						<span class="songArtist">I Took A Pill In Ibiza - Seeb Remix</span>
+	    					<div class="cb"></div>
+    					</li>
+    				</ul>
+    			</div>
+	    		<div class="cb"></div>
+    		</div>
+    	</section>
+    	<footer class="footer">
+    		<nav class="nav">
+    			<ul class="footerNav" role="menu">
+    				<li class="navItem" role="menuitem"><span class="copy">Copyright &copy; 2016, All rights reserved.</span></li>
+    				<li class="navItem" role="menuitem"><a tabindex="0" href="#">Contact Us</a></li>
+    				<li class="navItem" role="menuitem"><a tabindex="0" href="#">Privacy & cookies</a></li>
+    				<li class="navItem" role="menuitem"><a tabindex="0" href="#">Terms of Use</a></li>
+    				<li class="navItem" role="menuitem"><a tabindex="0" href="#">Sales and Refunds</a></li>
+    				<li class="navItem" role="menuitem"><a tabindex="0" href="#">Site Map</a></li>
+    			</ul>
+    		</nav>
+    	</footer>
+    	<script src="./all.js"></script>
+    	<script></script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+.footer {
+	text-align:center;
+	text-transform: uppercase;
+	padding:$defaultGutter;
+	.nav {
+		display:inline-block;
+	}
+	.copy {
+		color:$light;
+		display:inline-block;
+	}
+	.footerNav {
+		line-height: 1em;
+		color:$yellow1;
+		overflow:hidden;
+		.navItem {
+			padding-right:$defaultPadding;
+			padding-bottom:$defaultPadding;
+		}
+		> .navItem:last-child {
+			padding-right:0;
+		}
+	}
+	@media(min-width:$breakPoint) {
+		.footerNav {
+			.navItem {
+				float:left;
+			}
+		}
+	}
+}

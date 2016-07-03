@@ -1,0 +1,64 @@
+.pageSection {
+	max-width:$maxLayout;
+	padding:$defaultPadding;
+	.tileWrapper {
+		margin-bottom:$defaultPadding;
+		position:relative;
+	}
+	.caption {
+		position:absolute;
+		bottom:0px;
+		left:0px;
+		padding:$defaultPadding;
+		padding-bottom:0;
+		
+		&.orange {
+			color:$orange;
+		}
+		&.blue {
+			color:$blue;
+		}
+		
+		.title {
+			font-size:1.6rem;
+			margin:0;
+			padding-bottom:0.5em;
+			@media(max-width:$desktop){
+	        	font-size:1.2rem;
+	    	}
+			@media(max-width:$breakPoint){
+				font-size:1.6rem;
+	    	}
+			@media(max-width:$tiny){
+				font-size:0.9rem;
+	    	}
+		}
+		.info {
+			font-size:1.2rem;
+			margin:0;
+			padding-bottom:$defaultPadding;
+			@media(max-width:$desktop){
+	        	font-size:0.8rem;
+	    	}
+			@media(max-width:$breakPoint){
+				font-size:1.2rem;
+	    	}
+			@media(max-width:$tiny){
+				font-size:0.7rem;
+	    	}
+		}
+	}
+	.tile {
+		width:100%;
+		max-width:100%;
+		box-shadow:$shadow;
+	}
+	
+	@media(min-width:$breakPoint) {
+		padding:$defaultGutter;
+		.tileWrapper { 
+			margin-right:$defaultPadding;
+			margin-bottom:$defaultPadding; 
+		}
+	}
+}

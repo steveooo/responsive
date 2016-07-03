@@ -1,0 +1,32 @@
+.columns {
+	.columnTitleLeft {
+		font-weight:normal;
+		margin:0;
+		margin-left:$defaultPadding;
+		margin-bottom:$defaultPadding;
+		font-size: 1.2em;
+	}
+	.col {
+		width:100%;
+	}
+	@media(min-width:$breakPoint) {
+		.col {
+			float:left;
+			&.col-1-3 {
+				width:33.3333%;
+			}
+			&.col-1-2 {
+				width:50%;
+			}
+			&.col-2-3 {
+				width:66.6666%;
+			}
+		}
+		.divider-right {
+		}
+		.divider-left {
+			border-left:solid 1px $darkgrey;
+			margin-left:-1px;
+		}
+	}
+}

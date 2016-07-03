@@ -1,0 +1,9 @@
+.header {
+	position:relative;
+	background:$darkBgMobile;
+	text-align:left;
+    @media(min-width:$breakPoint){
+        text-align:center;
+		background:$darkBg;
+    }
+}

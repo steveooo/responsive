@@ -1,0 +1,40 @@
+.mobileNav {
+	display:block;
+	overflow:hidden;
+	.navItem {
+		display:inline-block;
+		width:50%;
+		float:left;
+		box-sizing:border-box;
+		padding:$defaultPadding;
+		&.text-left {
+			padding-left:$defaultGutter;
+		}
+		&.text-right {
+			padding-right:$defaultGutter;
+		}
+	}
+	.icon {
+		margin-top:2px;
+		&.search {
+			margin-top:-1.5px;
+		}
+		&.close {
+			display:none;
+		}
+	}
+	
+    @media(min-width:$breakPoint){
+        display:none;
+    }
+}
+.openMobile {
+	.mobileNav {
+		.hamburger {
+			display:none;
+		}
+		.close {
+			display:block;
+		}
+	}
+}

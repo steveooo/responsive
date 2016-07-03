@@ -1,0 +1,44 @@
+.songs {
+	.song {
+		padding-bottom:$defaultPadding;
+	}
+	> .song:last-child {
+		padding-bottom:0;
+	}
+	.imgBorder {
+		border-radius:1000px;
+		overflow:hidden;
+		display:inline-block;
+		width:5.5em;
+		height:5.5em;
+		position:relative;
+		float:left;
+		margin-right:$defaultPadding;
+		box-shadow:$shadow;
+	}
+	.songThumb {
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+		height:100%;
+	}
+	.songTitle {
+		color:$yellow1;
+		padding-top:1em;
+		display:block;
+		white-space: nowrap;
+		text-overflow:ellipsis;
+		overflow:hidden;
+	}
+	.songArtist {
+		padding-top:1em;
+		display:block;
+		white-space: nowrap;
+		text-overflow:ellipsis;
+		overflow:hidden;
+	}
+    @media(min-width:$breakPoint) {
+		padding-left:$defaultPadding;
+    }
+}

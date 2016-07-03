@@ -1,0 +1,44 @@
+.mainNav {
+	display:none;
+	z-index:1;
+    @media(min-width:$breakPoint){
+        display:block;
+    }
+	.navItem {
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		padding:$defaultPadding;
+		display:block;
+		
+	    @media(min-width:$breakPoint){
+	        display:inline-block;
+	    }
+	}
+	.icon {
+		max-width: 1em;
+		max-height:1em;
+		&.search {
+			margin-bottom:-2px;
+		}
+	}
+}
+.openMobile {
+    @media(max-width:$breakPoint+1){
+		.mainNav {
+			display:block;
+			position:absolute;
+			width:100%;
+			top:100%;
+			background:$darkBgMobile;
+			left:0px;
+		    .searchMain {
+		    	display:none;
+		    }
+		    .navItem {
+		    	padding-left:$defaultGutter;
+		    	padding-right:$defaultGutter;
+		    }
+		    padding-bottom:$defaultPadding;
+		}
+    }
+}
